@@ -3,7 +3,6 @@
 /**
  * _putchar - Custom putchar function
  * @c: The character to print
- *
  * Return: On success, returns the character printed.
  * On error, returns -1.
  */
@@ -14,7 +13,7 @@ return write(1, &c, 1);
 
 /**
  * main - Entry point
- *
+
  * Return: Always 0 (Success)
  */
 int main(void)

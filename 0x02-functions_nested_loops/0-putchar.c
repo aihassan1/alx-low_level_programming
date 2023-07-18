@@ -9,19 +9,24 @@
  */
 int _putchar(char c)
 {
-  return write(1, &c, 1);
+return write(1, &c, 1);
 }
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-  char str[] = "_putchar";
-  int i;
+char str[] = "_putchar";
+int i;
 
-  for (i = 0; str[i] != '\0'; i++)  // Updated the loop condition
-    {
-      _putchar(str[i]);
-    
-    }
-  _putchar('\n');
-  return 0;
+for (i = 0; str[i] != '\0'; i++)
+{
+_putchar(str[i]);
+}
+
+_putchar('\n');
+return 0;
 }

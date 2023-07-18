@@ -2,7 +2,6 @@
 
 /**
  * main - Entry point
-
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -16,5 +15,5 @@ _putchar(str[i]);
 }
 
 _putchar('\n');
- return (0);
+return (0);
 }

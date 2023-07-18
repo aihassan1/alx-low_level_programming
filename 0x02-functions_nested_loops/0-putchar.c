@@ -1,15 +1,6 @@
-#include <unistd.h>
+#include "main.h"
 
-/**
- * _putchar - Custom putchar function
- * @c: The character to print
- * Return: On success, returns the character printed.
- * On error, returns -1.
- */
 int _putchar(char c)
-{
-return write(1, &c, 1);
-}
 
 /**
  * main - Entry point

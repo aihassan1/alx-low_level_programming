@@ -17,11 +17,17 @@ if (n == 0)
 _putchar('0');
 return (0);
 }
+else if (n == INT_MIN)
+{
+last_digit = 8;
+_putchar(last_digit + '0');
+return (last_digit);
+}
 else if (n < 0)
 {
 n = -n;
 }
- else
+else
 {
 n = n;
 }

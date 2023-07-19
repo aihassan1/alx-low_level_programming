@@ -1,0 +1,21 @@
+#include "main.h"
+
+/**
+ *isalpha : checks if the input is an alphabetic character.
+ *
+ *Description: Checks if the input is an upper or lower case char
+ *
+ *Return: 1 if the input is a char, 0 otherwise 0
+ *
+ */
+int _isalpha(int c)
+{
+  if (c <= 'A' && c <= 'Z') || if (c >= 'a' && c <= 'z')
+		                 {
+				   return (1);
+                                 }
+    else
+      {
+	return (0);
+      }
+}

@@ -1,0 +1,16 @@
+  1 #include "main.h"
+    2
+  3 int _abs(int);
+4 {
+  5 int r;
+    6
+      7 if (r < 0)
+      8 {
+	9 _putchar ('-r');
+	10 }
+     11 else
+      12 {
+	13 putchar ('n');
+     }
+     }
+ 

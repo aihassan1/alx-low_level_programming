@@ -9,11 +9,12 @@ void puts2(char *str)
 {
 while (*str != '\0')
 {
-if (*str == '\0')
-break;
 
 _putchar (*str);
-str = str + 2;
+str++;
+if (*str == '\0')
+break;
+str++;
 }
 _putchar ('\n');
 }

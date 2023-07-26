@@ -1,0 +1,23 @@
+#include "main.h"
+
+
+void reverse_array(int *a, int n)
+{
+  int i;
+  int x[n];
+  int *starta = a;
+    for (i = 0; i < n; i++)
+    {
+      *x = *a;
+      a++;
+      x++;
+    }
+    a = starta;
+    for ( ; i > 0; i--)
+      {
+	a* = x*;
+	x--;
+	a++;
+      }
+    return (starta);
+}

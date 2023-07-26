@@ -9,7 +9,7 @@
  * Return: Pointer to the resulting concatenated string.
  */
 char *_strncat(char *dest, char *src, int n)
-{  
+{
 char *ptr = dest;
 while (*ptr != '\0')
 {
@@ -22,6 +22,9 @@ ptr++;
 src++;
 n--;
 }
+if(n < 0)
+{
 *ptr = '\0';
+}
 return (dest);
 }

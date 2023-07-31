@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL ((void *)0)
 
 /**
  * _strchr - Locates a character in a string.
@@ -6,7 +7,7 @@
  * @c: Character to be located.
  *
  * Return: Pointer to the first occurrence of the character 'c'
- *         in the string 's', or 0 if the character is not found.
+ * in the string 's', or 0 if the character is not found.
  */
 char *_strchr(char *s, char c)
 {
@@ -18,5 +19,5 @@ return (s);
 }
 s++;
 }
-return (0);
+return (NULL);
 }

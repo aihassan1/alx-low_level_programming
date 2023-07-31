@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ * _memcpy - Fills a block of memory with a specific value.
+ * @dest: Pointer to the destination memory.
+ * @src: Value to be set in each byte.
+ * @n: Number of bytes to be set.
+ *
+ * Return: Pointer to the destination memory.
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+unsigned int i;
+char temp;
+char *start = dest;
+{
+for (i = 0; i < n; i++)
+{
+temp = *src;
+*dest = temp;
+src++;
+dest++;
+}
+return (start);
+}
+}

@@ -16,12 +16,12 @@ size = (strlen(str) + 1);
 if (str == NULL)
 {
 return (NULL);
+free(dup);
 }
 if (dup == NULL)
 {
 return (NULL);
 }
-
 for (i = 0; i < size; i++)
 {
 dup[i] = str[i];

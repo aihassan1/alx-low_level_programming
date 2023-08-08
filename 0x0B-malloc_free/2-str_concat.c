@@ -20,7 +20,8 @@ if (s1 == NULL)
 s1 = " ";
 
 if (s2 == NULL)
-s2 = " ";
+s2 = '\0';
+
 
 if (s3 == NULL)
 {
@@ -35,5 +36,6 @@ for (j = 0; j < strlen(s2) + 1; i++, j++)
 {
 s3[i] = s2[j];
 }
+s3[i] = '\0';
 return (s3);
 }

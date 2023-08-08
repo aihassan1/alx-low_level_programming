@@ -33,20 +33,5 @@ for (c = 0; c < width; c++)
 grid[r][c] = 0;
 }
 }
-free_grid(grid,height);
 return (grid);
-}
-/**
- * free_grid - Frees the memory allocated for a 2D array.
- * @grid: Pointer to the 2D array.
- * @height: Height of the array.
-  */
- void free_grid(int **grid, int height)
-{
-int i;
-for (i = 0; i < height; i++)
-{
-free(grid[i]);
-}
-free(grid);
 }

@@ -21,7 +21,6 @@ return (NULL);
 
 if (array == NULL)
 {
-free(array);
 return (NULL);
 }
 

@@ -21,6 +21,7 @@ return (NULL);
 
 if (array == NULL)
 {
+free(array);
 return (NULL);
 }
 
@@ -28,5 +29,6 @@ for (i = 0; i < a_size; i++)
 {
 char_array[i] = 0;
 }
+free(array);
 return (array);
 }

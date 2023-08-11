@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
+
 /**
 * _calloc -  Allocates memory for an array and initializes with zeros.
 * @nmemb: Number of elements in the array.
@@ -11,8 +11,10 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+unsigned int i;
 unsigned int a_size = (nmemb * size);
 void *array = malloc(a_size);
+char *char_array = array;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
@@ -22,6 +24,10 @@ if (array == NULL)
 free(array);
 return (NULL);
 }
-memset(array,0,a_size);
+
+for (i = 0; i < a_size; i++)
+{
+char_array[i] = 0;
+}
 return (array);
 }

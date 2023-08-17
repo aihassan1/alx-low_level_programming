@@ -28,6 +28,11 @@ if (!op_fun)
 printf("Error\n");
 return (99);
 }
+if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
+{
+printf("Error\n");
+return (100);
+}
 result = op_fun(num1, num2);
 printf("%d\n", result);
 return (0);

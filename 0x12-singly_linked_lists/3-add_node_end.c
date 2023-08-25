@@ -43,8 +43,6 @@ ptr = ptr->next;
 ptr->next = new_node;
 }
 
-
-
-return (new_node);
+return (new_node->len);
 
 }

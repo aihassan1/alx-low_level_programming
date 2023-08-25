@@ -19,7 +19,7 @@ if (ptr->str == NULL)
 {
 printf("[0] (nil)\n");
 i++;
-return (i);
+ptr = ptr->next;
 }
 
 printf("[%d] %s\n", ptr->len, ptr->str);

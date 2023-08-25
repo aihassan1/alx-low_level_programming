@@ -18,7 +18,9 @@ if (new_node == NULL)
 return (NULL);
 }
 
+
 new_node->str = strdup(str);
+ new_node->len = strlen(str);
 new_node->next = NULL;
 
 
@@ -43,6 +45,6 @@ ptr->next = new_node;
 
 
 
-return (*head);
+return (new_node);
 
 }

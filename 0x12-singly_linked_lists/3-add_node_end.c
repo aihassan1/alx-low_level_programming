@@ -15,12 +15,13 @@ list_t *new_node = malloc(sizeof(list_t));
 
 if (new_node == NULL)
 {
+free(new_node);
 return (NULL);
 }
 
 
 new_node->str = strdup(str);
- new_node->len = strlen(str);
+new_node->len = strlen(str);
 new_node->next = NULL;
 
 
@@ -43,6 +44,6 @@ ptr = ptr->next;
 ptr->next = new_node;
 }
 
-return (new_node->len);
+return (new_node);
 
 }

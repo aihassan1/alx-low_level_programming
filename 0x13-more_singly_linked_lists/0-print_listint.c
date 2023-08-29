@@ -15,7 +15,7 @@ const listint_t *ptr;
 ptr = h;
 if (h == NULL)
 {
-return (1);
+return (0);
 }
 
 while (ptr != NULL)

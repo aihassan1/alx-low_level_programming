@@ -15,7 +15,6 @@ const listint_t *ptr;
 ptr = h;
 if (h == NULL)
 {
-printf("Error\n");
 return (1);
 }
 

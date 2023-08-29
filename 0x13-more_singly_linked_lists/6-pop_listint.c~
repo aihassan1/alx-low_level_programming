@@ -1,0 +1,12 @@
+  #include "lists.h"
+  #include <stdlib.h>
+
+int pop_listint(listint_t **head)
+{
+  listint_t *node = *head;
+  int data = (*head)->n;
+
+  *head = (*head)->next;
+  free(node);
+  return (data);
+}

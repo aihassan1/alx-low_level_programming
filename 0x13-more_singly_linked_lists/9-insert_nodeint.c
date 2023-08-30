@@ -22,7 +22,7 @@ new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
 
-while (counter < idx)
+while (counter < (idx - 1))
 {
 if (ptr == NULL)
 {

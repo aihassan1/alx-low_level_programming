@@ -16,7 +16,7 @@ dlistint_t *temp;
 dlistint_t *node;
 dlistint_t *new_node;
 
-node = get_dnodeint_at_index(*h, idx);
+node = get_dnodeint_at_index(*h, (idx - 1));
 if (node == NULL)
 return (NULL);
 
@@ -65,9 +65,9 @@ temp = head;
 while (temp != NULL)
 {
 if (counter == index)
-	return (temp);
+return (temp);
 else if (temp == NULL)
-	return (NULL);
+return (NULL);
 
 temp = temp->next;
 counter++;

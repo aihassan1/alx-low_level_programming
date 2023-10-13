@@ -14,6 +14,7 @@ dlistint_t *new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)
 {
 dprintf(2, "Error: Can't malloc\n");
+free(new_node);
 exit(1);
 }
 

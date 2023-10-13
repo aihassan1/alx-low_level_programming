@@ -12,12 +12,6 @@ const dlistint_t *temp;
 int nodes_counter = 0;
 temp = h;
 
-if (h == NULL)
-{
-printf("Empty node");
-return (EXIT_FAILURE);
-}
-
 while (temp != NULL)
 {
 printf("%d\n", temp->n);

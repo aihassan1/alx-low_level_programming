@@ -14,16 +14,12 @@ dlistint_t *new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)
 {
 dprintf(2, "Error: Can't malloc\n");
-exit(1)
+exit(1);
 }
 
 new_node->n = n;
 new_node->prev = NULL;
 new_node->next = *head;
-if (*head != NULL)
-{
-(*head)->prev = new_node;
-}
 
 *head = new_node;
 

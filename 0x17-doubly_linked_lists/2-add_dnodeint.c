@@ -20,7 +20,10 @@ exit(1);
 new_node->n = n;
 new_node->prev = NULL;
 new_node->next = *head;
-
+if (*head != NULL)
+{
+(*head)->prev = new_node;
+}
 *head = new_node;
 
 return (*head);

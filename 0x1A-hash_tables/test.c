@@ -1,0 +1,29 @@
+#include "hash_tables.h"
+
+typedef struct {
+  char *name;
+  int value;
+} item;
+
+item *linear_search(item *items, size_t size, const char *name) {
+  size_t i;
+  for (i = 0; i < size; i++) {
+    if (strcmp(items[i].name, name) == 0) {
+      return &items[i];
+    }
+  }
+  return NULL;
+}
+
+int main(void) {
+  item items[] = {{"foo", 10}, {"bar", 42},   {"bazz", 36}, {"buzz", 7},
+                  {"bob", 11}, {"jane", 100}, {"x", 200}};
+  size_t num_items = sizeof(items) / sizeof(item);
+
+  item *found = linear_search(items, num_items, "bob");
+  if (!found) {
+    return 1;
+  }
+  printf("linear_search: value of 'bob' is %d\n", found->value);
+  return 0;
+}

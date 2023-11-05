@@ -27,6 +27,7 @@ return (0);
 }
 return (1);
 }
+current_node = current_node->next;
 }
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)

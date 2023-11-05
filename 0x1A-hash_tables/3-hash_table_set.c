@@ -10,24 +10,24 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 unsigned long int index;
-hash_node_t *new_node, *current_node = NULL;
+hash_node_t *new_node, *temp_node_pointer = NULL;
 if (ht == NULL || key == NULL || key[0] == '\0')
 return (0);
 index = key_index((const unsigned char *)key, ht->size);
-current_node = ht->array[index];
-while (current_node != NULL)
+temp_node_pointer = ht->array[index];
+while (temp_node_pointer != NULL)
 {
-if (strcmp(current_node->key, key) == 0)
+if (strcmp(temp_node_pointer->key, key) == 0)
 {
-free(current_node->value);
-current_node->value = strdup(value);
-if (current_node->value == NULL)
+free(temp_node_pointer->value);
+temp_node_pointer->value = strdup(value);
+if (temp_node_pointer->value == NULL)
 {
 return (0);
 }
 return (1);
 }
-current_node = current_node->next;
+temp_node_pointer = temp_node_pointer->next;
 }
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)

@@ -24,6 +24,7 @@ current_node->value = strdup(value);
 if (current_node->value == NULL)
 {
 return (0);
+}
 return (1);
 }
 }
@@ -46,5 +47,4 @@ return (0);
 new_node->next = current_node;
 ht->array[index] = new_node;
 return (1);
-}
 }

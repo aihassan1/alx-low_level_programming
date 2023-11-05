@@ -9,11 +9,5 @@
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size) 
 {
-unsigned long int hashed_value;
-	
-if (key == NULL)
-return (-1);
-
-hashed_value = hash_djb2(key) % size;
-return (hashed_value);
+return (hash_djb2(key) % size);
 }

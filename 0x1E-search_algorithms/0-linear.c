@@ -14,7 +14,7 @@ int linear_search(int *array, size_t size, int value)
     size_t i;
 
     /*If value is not present in array or if array is NULL, your function must return -1*/
-    if (array == NULL)
+    if (array == NULL || !value)
     {
         return (-1);
     }
@@ -25,11 +25,9 @@ int linear_search(int *array, size_t size, int value)
 
         if (value == array[i])
         {
-            printf("Found %d at index: %lu\n", value, i);
             return (i);
         }
     }
 
-    printf("Found %d at index: -1\n", value);
     return (-1);
 }
